@@ -1,14 +1,17 @@
 
-import React from 'react';
+import React, { useEffect } from 'react';
 import {
   Carousel,
   CarouselContent,
   CarouselItem,
   CarouselNext,
   CarouselPrevious,
+  CarouselApi,
 } from "@/components/ui/carousel";
 
 const ImageCarousel = () => {
+  const [api, setApi] = React.useState<CarouselApi>();
+
   const images = [
     {
       src: "/lovable-uploads/dfcb35e5-a33c-475a-99b3-f495a5bd056b.png",
@@ -28,6 +31,18 @@ const ImageCarousel = () => {
     }
   ];
 
+  useEffect(() => {
+    if (!api) {
+      return;
+    }
+
+    const interval = setInterval(() => {
+      api.scrollNext();
+    }, 4000); // Auto-slide every 4 seconds
+
+    return () => clearInterval(interval);
+  }, [api]);
+
   return (
     <section className="py-16 bg-gradient-to-b from-orange-50 to-green-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6">
@@ -42,6 +57,7 @@ const ImageCarousel = () => {
 
         <div className="relative max-w-4xl mx-auto">
           <Carousel
+            setApi={setApi}
             opts={{
               align: "start",
               loop: true,

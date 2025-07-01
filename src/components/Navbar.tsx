@@ -1,6 +1,6 @@
 
 import React, { useState } from 'react';
-import { Menu, X, Leaf } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -28,10 +28,12 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
-          <div className="flex items-center space-x-2">
-            <div className="bg-gradient-to-br from-green-500 to-orange-500 p-2 rounded-full">
-              <Leaf className="w-6 h-6 text-white" />
-            </div>
+          <div className="flex items-center space-x-3">
+            <img 
+              src="/lovable-uploads/2f7a299b-4f8e-462a-abd3-4eca40f67e1a.png" 
+              alt="Agahozo Farm Logo" 
+              className="w-12 h-12 object-contain"
+            />
             <span className="text-lg sm:text-xl font-bold text-green-800">Agahozo Farm</span>
           </div>
 
