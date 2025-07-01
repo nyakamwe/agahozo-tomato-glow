@@ -4,8 +4,10 @@ import Navbar from '../components/Navbar';
 import Hero from '../components/Hero';
 import About from '../components/About';
 import Services from '../components/Services';
+import ImageCarousel from '../components/ImageCarousel';
 import Impact from '../components/Impact';
 import Contact from '../components/Contact';
+import Footer from '../components/Footer';
 
 const Index = () => {
   return (
@@ -20,12 +22,16 @@ const Index = () => {
       <section id="services">
         <Services />
       </section>
+      <section id="gallery">
+        <ImageCarousel />
+      </section>
       <section id="impact">
         <Impact />
       </section>
       <section id="contact">
         <Contact />
       </section>
+      <Footer />
     </div>
   );
 };
