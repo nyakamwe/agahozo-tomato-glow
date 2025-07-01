@@ -4,7 +4,7 @@ import { Leaf, TreePine, Users, Sparkles } from 'lucide-react';
 
 const Hero = () => {
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-green-600 via-green-500 to-orange-400">
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-green-600 via-green-500 to-orange-400 pt-16">
       {/* Animated Background Elements */}
       <div className="absolute inset-0 overflow-hidden">
         {/* Floating Tomatoes */}
@@ -24,6 +24,27 @@ const Hero = () => {
         </div>
         <div className="absolute bottom-40 right-40 animate-spin slow delay-700">
           <Leaf className="w-8 h-8 text-green-200 opacity-60" />
+        </div>
+        
+        {/* Greenhouse Images */}
+        <div className="absolute top-1/4 left-10 animate-bounce delay-1000">
+          <div className="w-16 h-12 bg-green-400/30 rounded-lg border-2 border-green-300 backdrop-blur-sm">
+            <div className="w-full h-2 bg-green-300 rounded-t-lg"></div>
+          </div>
+        </div>
+        
+        {/* Solar Panel Animation */}
+        <div className="absolute bottom-1/4 right-10 animate-pulse delay-500">
+          <div className="w-12 h-8 bg-blue-400/40 rounded border border-blue-300 backdrop-blur-sm">
+            <div className="grid grid-cols-3 gap-0.5 p-1 h-full">
+              <div className="bg-blue-300 rounded-sm animate-pulse"></div>
+              <div className="bg-blue-300 rounded-sm animate-pulse delay-100"></div>
+              <div className="bg-blue-300 rounded-sm animate-pulse delay-200"></div>
+              <div className="bg-blue-300 rounded-sm animate-pulse delay-300"></div>
+              <div className="bg-blue-300 rounded-sm animate-pulse delay-400"></div>
+              <div className="bg-blue-300 rounded-sm animate-pulse delay-500"></div>
+            </div>
+          </div>
         </div>
         
         {/* Sparkles */}
