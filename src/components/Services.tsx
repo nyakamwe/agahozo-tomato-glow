@@ -1,40 +1,56 @@
 
 import React from 'react';
-import { Sprout, Droplets, Sun, Users, Zap, Leaf } from 'lucide-react';
+import { Sprout, Droplets, Sun, Package, Shield, Wheat } from 'lucide-react';
 
 const Services = () => {
   const services = [
     {
       icon: <Sprout className="w-8 h-8" />,
-      title: "Greenhouse Production",
-      description: "State-of-the-art controlled environment agriculture for premium tomato production",
+      title: "Land Preparation",
+      description: "Professional land preparation services to optimize soil conditions for maximum crop yield",
       color: "from-emerald-400 to-emerald-600",
       bgColor: "bg-emerald-50",
       textColor: "text-emerald-800"
     },
     {
+      icon: <Wheat className="w-8 h-8" />,
+      title: "Crop Management",
+      description: "Comprehensive crop management solutions from planting to harvest optimization",
+      color: "from-amber-400 to-amber-600",
+      bgColor: "bg-amber-50",
+      textColor: "text-amber-800"
+    },
+    {
       icon: <Droplets className="w-8 h-8" />,
-      title: "Water-Smart Irrigation",
-      description: "Advanced hydroponic systems that reduce water usage by up to 90%",
+      title: "Irrigation Systems",
+      description: "Modern irrigation system installation and maintenance for efficient water management",
       color: "from-cyan-400 to-cyan-600",
       bgColor: "bg-cyan-50",
       textColor: "text-cyan-800"
     },
     {
-      icon: <Sun className="w-8 h-8" />,
-      title: "Solar-Powered Systems",
-      description: "Renewable energy solutions powering our greenhouse operations sustainably",
-      color: "from-amber-400 to-orange-500",
-      bgColor: "bg-amber-50",
-      textColor: "text-amber-800"
-    },
-    {
-      icon: <Users className="w-8 h-8" />,
-      title: "Community Training",
-      description: "Empowering local farmers with modern agricultural techniques and skills",
+      icon: <Package className="w-8 h-8" />,
+      title: "Agricultural Input Supply & Raw Materials",
+      description: "Quality agricultural inputs, seeds, fertilizers, and raw materials supply",
       color: "from-violet-400 to-violet-600",
       bgColor: "bg-violet-50",
       textColor: "text-violet-800"
+    },
+    {
+      icon: <Shield className="w-8 h-8" />,
+      title: "Pest Control",
+      description: "Integrated pest management solutions to protect crops and ensure healthy yields",
+      color: "from-red-400 to-red-600",
+      bgColor: "bg-red-50",
+      textColor: "text-red-800"
+    },
+    {
+      icon: <Sun className="w-8 h-8" />,
+      title: "Harvesting",
+      description: "Professional harvesting services and post-harvest handling for optimal produce quality",
+      color: "from-orange-400 to-orange-600",
+      bgColor: "bg-orange-50",
+      textColor: "text-orange-800"
     }
   ];
 
@@ -73,58 +89,25 @@ const Services = () => {
         <div className="absolute bottom-32 right-32 animate-spin slow">
           <Sun className="w-10 h-10 text-yellow-500/60" />
         </div>
-        
-        {/* Electric Elements */}
-        <div className="absolute top-1/2 left-1/4 animate-pulse delay-500">
-          <Zap className="w-6 h-6 text-yellow-400/60" />
-        </div>
-        
-        {/* Floating Leaves */}
-        <div className="absolute top-1/3 right-1/3 animate-bounce delay-800">
-          <Leaf className="w-6 h-6 text-green-400/60 animate-pulse" />
-        </div>
       </div>
 
       <div className="max-w-7xl mx-auto px-6 relative z-10">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-green-800 mb-6">
-            Our Services & Innovation
+            Services & Innovation
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Combining traditional farming wisdom with cutting-edge technology 
-            to create sustainable agricultural solutions.
+            Comprehensive agricultural services designed to enhance productivity 
+            and sustainability across Rwanda's farming communities.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {services.map((service, index) => (
             <div 
               key={index}
               className={`group ${service.bgColor} rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 relative overflow-hidden border-2 border-white`}
             >
-              {/* Service Card Background Animation */}
-              <div className="absolute top-4 right-4 opacity-20">
-                {index === 0 && (
-                  <div className="w-6 h-5 bg-green-200 rounded border border-green-300 animate-pulse">
-                    <div className="w-full h-1 bg-green-400 rounded-t"></div>
-                  </div>
-                )}
-                {index === 1 && (
-                  <Droplets className="w-6 h-6 text-blue-400 animate-bounce" />
-                )}
-                {index === 2 && (
-                  <div className="w-6 h-4 bg-yellow-200 rounded border border-yellow-400 animate-pulse">
-                    <div className="grid grid-cols-2 gap-0.5 p-0.5 h-full">
-                      <div className="bg-yellow-400 rounded-sm animate-pulse"></div>
-                      <div className="bg-yellow-400 rounded-sm animate-pulse delay-200"></div>
-                    </div>
-                  </div>
-                )}
-                {index === 3 && (
-                  <Users className="w-6 h-6 text-purple-400 animate-pulse" />
-                )}
-              </div>
-              
               <div className={`w-16 h-16 bg-gradient-to-br ${service.color} rounded-full flex items-center justify-center text-white mb-6 group-hover:scale-110 transition-transform duration-300`}>
                 {service.icon}
               </div>
@@ -136,35 +119,6 @@ const Services = () => {
               </p>
             </div>
           ))}
-        </div>
-
-        {/* Enhanced Animated Tomato Section */}
-        <div className="mt-20 text-center">
-          <div className="inline-flex items-center gap-4 bg-white rounded-full px-8 py-4 shadow-lg relative">
-            {/* Greenhouse Icon */}
-            <div className="absolute -left-2 -top-2 animate-bounce delay-500">
-              <div className="w-8 h-6 bg-green-100 rounded border border-green-300">
-                <div className="w-full h-1 bg-green-400 rounded-t"></div>
-              </div>
-            </div>
-            
-            <div className="flex gap-2">
-              <div className="w-6 h-6 bg-red-500 rounded-full animate-bounce"></div>
-              <div className="w-6 h-6 bg-red-400 rounded-full animate-bounce delay-100"></div>
-              <div className="w-6 h-6 bg-red-600 rounded-full animate-bounce delay-200"></div>
-            </div>
-            <span className="text-green-800 font-semibold">Fresh Tomatoes Daily</span>
-            
-            {/* Solar Panel Icon */}
-            <div className="absolute -right-2 -bottom-2 animate-pulse delay-700">
-              <div className="w-6 h-4 bg-blue-100 rounded border border-blue-300">
-                <div className="grid grid-cols-2 gap-0.5 p-0.5 h-full">
-                  <div className="bg-blue-400 rounded-sm animate-pulse"></div>
-                  <div className="bg-blue-400 rounded-sm animate-pulse delay-200"></div>
-                </div>
-              </div>
-            </div>
-          </div>
         </div>
       </div>
     </section>

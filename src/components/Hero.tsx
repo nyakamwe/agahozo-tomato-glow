@@ -60,33 +60,17 @@ const Hero = () => {
       <div className="relative z-10 text-center px-4 sm:px-6 max-w-6xl mx-auto">
         <div className="animate-fade-in">
           <h1 className="font-serif text-4xl sm:text-5xl md:text-7xl font-bold text-white mb-4 sm:mb-6 leading-tight animate-[slideInFromTop_1s_ease-out]">
-            <span className="block animate-[slideInFromLeft_1s_ease-out_0.2s_both]">Agahozo Farm</span>
-            <span className="block text-gray-300 animate-[slideInFromRight_1s_ease-out_0.4s_both]">Limited</span>
+            <span className="block animate-[slideInFromLeft_1s_ease-out_0.2s_both]">Welcome to</span>
+            <span className="block text-blue-400 animate-[slideInFromRight_1s_ease-out_0.4s_both]">Agahozo Farm Ltd</span>
           </h1>
           
-          <p className="font-sans text-lg sm:text-xl md:text-2xl text-blue-400 mb-6 sm:mb-8 max-w-3xl mx-auto leading-relaxed px-2 font-semibold animate-[slideInFromBottom_1s_ease-out_0.6s_both]">
-            Growing Excellence, Nurturing Communities
+          <p className="font-sans text-lg sm:text-xl md:text-2xl text-gray-300 mb-6 sm:mb-8 max-w-4xl mx-auto leading-relaxed px-2 animate-[slideInFromBottom_1s_ease-out_0.6s_both]">
+            Your trusted partner in sustainable agriculture, livestock production, and agribusiness support in Rwanda. We are dedicated to delivering innovative, high-quality agricultural services that empower farmers, enhance food security, and promote rural development.
           </p>
 
-          <p className="font-sans text-base sm:text-lg md:text-xl text-gray-300 mb-6 sm:mb-8 max-w-3xl mx-auto leading-relaxed px-2 animate-[fadeInUp_1s_ease-out_0.8s_both]">
-            Climate-smart agribusiness producing high-quality greenhouse tomatoes year-round 
-            while creating jobs and empowering rural communities in Kigali city and Bugesera district
+          <p className="font-sans text-base sm:text-lg text-gray-400 mb-8 sm:mb-12 max-w-4xl mx-auto leading-relaxed px-2 animate-[fadeInUp_1s_ease-out_0.8s_both]">
+            Agahozo Farm LTD is a Rwandan registered company with its Head office in Kigali City, Remera – Gasabo and offer distinguished mixing farm services according to the business activities like support activities for animal production and wholesale of agricultural raw materials and live animals and so, on hereinafter referred to as the "Client", represented by Managing Director, Mr. Vincent TWAGIRAMUNGU.
           </p>
-          
-          <div className="flex flex-wrap justify-center gap-2 sm:gap-4 mb-8 sm:mb-12 px-2 animate-[fadeInUp_1s_ease-out_1s_both]">
-            <div className="flex items-center gap-2 bg-white/20 backdrop-blur-sm rounded-full px-3 sm:px-6 py-2 sm:py-3 text-white text-sm sm:text-base">
-              <TreePine className="w-4 h-4 sm:w-5 sm:h-5" />
-              <span>Sustainable Farming</span>
-            </div>
-            <div className="flex items-center gap-2 bg-white/20 backdrop-blur-sm rounded-full px-3 sm:px-6 py-2 sm:py-3 text-white text-sm sm:text-base">
-              <Users className="w-4 h-4 sm:w-5 sm:h-5" />
-              <span>Community Empowerment</span>
-            </div>
-            <div className="flex items-center gap-2 bg-white/20 backdrop-blur-sm rounded-full px-3 sm:px-6 py-2 sm:py-3 text-white text-sm sm:text-base">
-              <Leaf className="w-4 h-4 sm:w-5 sm:h-5" />
-              <span>Year-Round Production</span>
-            </div>
-          </div>
           
           <button 
             onClick={() => document.querySelector('#about')?.scrollIntoView({ behavior: 'smooth' })}
