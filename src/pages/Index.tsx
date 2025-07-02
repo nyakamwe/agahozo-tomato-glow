@@ -2,6 +2,7 @@
 import React from 'react';
 import Navbar from '../components/Navbar';
 import Hero from '../components/Hero';
+import FarmShowcase from '../components/FarmShowcase';
 import About from '../components/About';
 import Services from '../components/Services';
 import ImageCarousel from '../components/ImageCarousel';
@@ -16,6 +17,7 @@ const Index = () => {
       <section id="home">
         <Hero />
       </section>
+      <FarmShowcase />
       <section id="about">
         <About />
       </section>
