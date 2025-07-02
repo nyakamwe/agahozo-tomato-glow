@@ -8,25 +8,33 @@ const Services = () => {
       icon: <Sprout className="w-8 h-8" />,
       title: "Greenhouse Production",
       description: "State-of-the-art controlled environment agriculture for premium tomato production",
-      color: "from-green-400 to-green-600"
+      color: "from-emerald-400 to-emerald-600",
+      bgColor: "bg-emerald-50",
+      textColor: "text-emerald-800"
     },
     {
       icon: <Droplets className="w-8 h-8" />,
       title: "Water-Smart Irrigation",
       description: "Advanced hydroponic systems that reduce water usage by up to 90%",
-      color: "from-blue-400 to-blue-600"
+      color: "from-cyan-400 to-cyan-600",
+      bgColor: "bg-cyan-50",
+      textColor: "text-cyan-800"
     },
     {
       icon: <Sun className="w-8 h-8" />,
       title: "Solar-Powered Systems",
       description: "Renewable energy solutions powering our greenhouse operations sustainably",
-      color: "from-yellow-400 to-orange-500"
+      color: "from-amber-400 to-orange-500",
+      bgColor: "bg-amber-50",
+      textColor: "text-amber-800"
     },
     {
       icon: <Users className="w-8 h-8" />,
       title: "Community Training",
       description: "Empowering local farmers with modern agricultural techniques and skills",
-      color: "from-purple-400 to-purple-600"
+      color: "from-violet-400 to-violet-600",
+      bgColor: "bg-violet-50",
+      textColor: "text-violet-800"
     }
   ];
 
@@ -92,7 +100,7 @@ const Services = () => {
           {services.map((service, index) => (
             <div 
               key={index}
-              className="group bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 relative overflow-hidden"
+              className={`group ${service.bgColor} rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 relative overflow-hidden border-2 border-white`}
             >
               {/* Service Card Background Animation */}
               <div className="absolute top-4 right-4 opacity-20">
@@ -120,10 +128,10 @@ const Services = () => {
               <div className={`w-16 h-16 bg-gradient-to-br ${service.color} rounded-full flex items-center justify-center text-white mb-6 group-hover:scale-110 transition-transform duration-300`}>
                 {service.icon}
               </div>
-              <h3 className="text-xl font-semibold text-green-800 mb-4">
+              <h3 className={`text-xl font-semibold ${service.textColor} mb-4`}>
                 {service.title}
               </h3>
-              <p className="text-gray-600 leading-relaxed">
+              <p className="text-gray-700 leading-relaxed">
                 {service.description}
               </p>
             </div>
