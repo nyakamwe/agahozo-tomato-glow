@@ -94,7 +94,7 @@ const Services = () => {
       <div className="max-w-7xl mx-auto px-6 relative z-10">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-green-800 mb-6">
-            Services & Innovation
+            Innovation
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             Comprehensive agricultural services designed to enhance productivity 
