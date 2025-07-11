@@ -37,7 +37,7 @@ const Footer = () => {
               </div>
               <div className="flex items-center gap-3">
                 <Mail className="w-4 h-4 text-orange-300 flex-shrink-0" />
-                <span className="text-yellow-100 text-sm">info@agahozofarm.com</span>
+                <span className="text-yellow-100 text-sm">info@agahozofarm.rw</span>
               </div>
             </div>
           </div>
@@ -84,7 +84,7 @@ const Footer = () => {
         {/* Copyright Section */}
         <div className="border-t border-yellow-500 mt-12 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
-            <p className="text-yellow-200 text-sm text-center md:text-left">
+            <p className="text-yellow-200 text-sm text-center md:text-left animate-pulse">
               © 2025 Agahozo Farm Ltd. All rights reserved.
             </p>
             <div className="flex gap-6 text-sm">

@@ -26,10 +26,10 @@ const Contact = () => {
               <div className="min-w-0 flex-1">
                 <h3 className="text-lg sm:text-xl font-semibold text-green-800 mb-1 sm:mb-2">Email Us</h3>
                 <a 
-                  href="mailto:info@agahozofarm.com"
+                  href="mailto:info@agahozofarm.rw"
                   className="text-gray-600 hover:text-green-600 transition-colors break-all sm:break-normal"
                 >
-                  info@agahozofarm.com
+                  info@agahozofarm.rw
                 </a>
               </div>
             </div>

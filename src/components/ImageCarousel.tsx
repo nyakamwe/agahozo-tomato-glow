@@ -14,44 +14,16 @@ const ImageCarousel = () => {
 
   const images = [
     {
-      src: "/lovable-uploads/0284ec66-0a4a-47c9-a4b7-5c129e4c7418.png",
-      alt: "Farmer working in rice fields - sustainable agriculture"
+      src: "/lovable-uploads/b66d04f0-e08e-41af-88d1-11f837805e35.png",
+      alt: "Fresh harvested tomatoes in green crates ready for market"
     },
     {
-      src: "/lovable-uploads/29467388-aa39-43ae-884d-69956263a26c.png",
-      alt: "Solar-powered greenhouse with automated irrigation system"
-    },
-    {
-      src: "/lovable-uploads/4c20f88c-081e-4e7d-bd22-553c19320d18.png",
-      alt: "Fresh ripe tomatoes ready for harvest"
-    },
-    {
-      src: "/lovable-uploads/82954982-a5e9-41df-81ab-4724872c518e.png",
+      src: "/lovable-uploads/707f3f00-d116-42fe-9cd5-c492238d6d70.png",
       alt: "Farmer harvesting tomatoes in modern greenhouse"
     },
     {
-      src: "/lovable-uploads/a10411b5-03d1-4ca4-9dfb-a722ac6689f3.png",
-      alt: "Solar-powered irrigation system in greenhouse"
-    },
-    {
-      src: "/lovable-uploads/4b5473c7-559b-471b-8edb-fd3b71450434.png",
-      alt: "Organic tomato cultivation in controlled environment"
-    },
-    {
-      src: "/lovable-uploads/828b581d-58ce-4370-9456-6d496dc26836.png",
-      alt: "Hydroponic tomato farming in modern greenhouse"
-    },
-    {
-      src: "/lovable-uploads/0b3c8fdc-8059-49b3-aa15-907883bad41e.png",
-      alt: "Fresh harvested tomatoes ready for market"
-    },
-    {
-      src: "/lovable-uploads/c39113cd-0a09-40ae-925e-d61b291d32f0.png",
-      alt: "Smart agriculture technology and innovation"
-    },
-    {
-      src: "/lovable-uploads/cd55d986-e5e1-4ed2-9376-b56722b4376b.png",
-      alt: "Solar-powered farming irrigation system"
+      src: "/lovable-uploads/930a1299-d32b-45b3-afeb-e54bb8184304.png",
+      alt: "Premium quality tomatoes in harvest crates"
     }
   ];
 
@@ -62,7 +34,7 @@ const ImageCarousel = () => {
 
     const interval = setInterval(() => {
       api.scrollNext();
-    }, 4000); // Auto-slide every 4 seconds
+    }, 3000); // Auto-slide every 3 seconds for faster transition
 
     return () => clearInterval(interval);
   }, [api]);
@@ -75,7 +47,7 @@ const ImageCarousel = () => {
             Our Farm Gallery
           </h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            Explore our modern farming practices, sustainable agriculture, and premium crop production
+            Explore our premium tomato production, sustainable farming practices, and quality harvest
           </p>
         </div>
 
