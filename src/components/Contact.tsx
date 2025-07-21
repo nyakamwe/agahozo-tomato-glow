@@ -19,8 +19,8 @@ const Contact = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16">
           {/* Contact Information */}
           <div className="space-y-6 sm:space-y-8">
-            <div className="flex items-center gap-4 sm:gap-6 p-4 sm:p-6 bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 animate-fade-in animate-pulse hover:animate-none" style={{animationDelay: '0.1s'}}>
-              <div className="bg-green-100 p-3 sm:p-4 rounded-full flex-shrink-0 transition-all duration-300 hover:scale-110 animate-bounce" style={{animationDelay: '0.5s'}}>
+            <div className="flex items-center gap-4 sm:gap-6 p-4 sm:p-6 bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-500 transform hover:scale-105 animate-fade-in" style={{animationDelay: '0.2s'}}>
+              <div className="bg-green-100 p-3 sm:p-4 rounded-full flex-shrink-0 transition-all duration-500 hover:scale-110">
                 <Mail className="w-5 h-5 sm:w-6 sm:h-6 text-green-600" />
               </div>
               <div className="min-w-0 flex-1">
@@ -34,8 +34,8 @@ const Contact = () => {
               </div>
             </div>
 
-            <div className="flex items-center gap-4 sm:gap-6 p-4 sm:p-6 bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 animate-fade-in animate-pulse hover:animate-none" style={{animationDelay: '0.2s'}}>
-              <div className="bg-red-100 p-3 sm:p-4 rounded-full flex-shrink-0 transition-all duration-300 hover:scale-110 animate-bounce" style={{animationDelay: '1s'}}>
+            <div className="flex items-center gap-4 sm:gap-6 p-4 sm:p-6 bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-500 transform hover:scale-105 animate-fade-in" style={{animationDelay: '0.4s'}}>
+              <div className="bg-red-100 p-3 sm:p-4 rounded-full flex-shrink-0 transition-all duration-500 hover:scale-110">
                 <Phone className="w-5 h-5 sm:w-6 sm:h-6 text-red-600" />
               </div>
               <div className="min-w-0 flex-1">
@@ -49,8 +49,8 @@ const Contact = () => {
               </div>
             </div>
 
-            <div className="flex items-center gap-4 sm:gap-6 p-4 sm:p-6 bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 animate-fade-in animate-pulse hover:animate-none" style={{animationDelay: '0.3s'}}>
-              <div className="bg-orange-100 p-3 sm:p-4 rounded-full flex-shrink-0 transition-all duration-300 hover:scale-110 animate-bounce" style={{animationDelay: '1.5s'}}>
+            <div className="flex items-center gap-4 sm:gap-6 p-4 sm:p-6 bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-500 transform hover:scale-105 animate-fade-in" style={{animationDelay: '0.6s'}}>
+              <div className="bg-orange-100 p-3 sm:p-4 rounded-full flex-shrink-0 transition-all duration-500 hover:scale-110">
                 <MapPin className="w-5 h-5 sm:w-6 sm:h-6 text-orange-600" />
               </div>
               <div className="min-w-0 flex-1">
