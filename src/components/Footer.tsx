@@ -84,7 +84,7 @@ const Footer = () => {
         {/* Copyright Section */}
         <div className="border-t border-yellow-500 mt-12 pt-8 animate-fade-in" style={{animationDelay: '0.5s'}}>
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
-            <p className="text-yellow-200 text-sm text-center md:text-left hover:scale-105 transition-transform duration-300">
+            <p className="text-yellow-200 text-sm text-center md:text-left hover:scale-105 transition-transform duration-300 animate-pulse">
               © 2025 Agahozo Farm Ltd. All rights reserved.
             </p>
             <div className="flex gap-6 text-sm">
