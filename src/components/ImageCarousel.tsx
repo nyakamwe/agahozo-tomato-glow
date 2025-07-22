@@ -24,6 +24,30 @@ const ImageCarousel = () => {
     {
       src: "/lovable-uploads/930a1299-d32b-45b3-afeb-e54bb8184304.png",
       alt: "Premium quality tomatoes in harvest crates"
+    },
+    {
+      src: "/lovable-uploads/d8bca9d5-e59a-4da8-bc31-f8cd288ae430.png",
+      alt: "Sustainable farming with drip irrigation system in tomato cultivation"
+    },
+    {
+      src: "/lovable-uploads/acdcbcb6-cd62-439a-9b1a-24c1bce7a5cc.png",
+      alt: "Fresh green tomatoes growing on healthy tomato plants"
+    },
+    {
+      src: "/lovable-uploads/e53952b7-1eb5-4d0b-b9e7-f39585dc0786.png",
+      alt: "Modern greenhouse tomato cultivation with systematic planting rows"
+    },
+    {
+      src: "/lovable-uploads/dc7c877e-94fb-4c85-a35e-6fac5970ed1a.png",
+      alt: "Professional greenhouse farming setup with optimal growing conditions"
+    },
+    {
+      src: "/lovable-uploads/9e2fa999-283d-476a-a456-bd2dd24685f8.png",
+      alt: "Organic tomato farming with natural growing methods"
+    },
+    {
+      src: "/lovable-uploads/05b97588-8bdb-492b-a86a-1f77879497b0.png",
+      alt: "Farmer tending to tomato plants with careful cultivation practices"
     }
   ];
 
